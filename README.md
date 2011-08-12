@@ -17,3 +17,7 @@ directory.
 Once you install the dogmatic.vim plugin it will automatically disable your
 arrow keys. Vim will show a message at the bottom of the window when you try to
 use your arrow keys.
+
+In order to see Dogmatic's output in Insert mode you will need to add this line to your vimrc.
+    set cmdheight=2
+
