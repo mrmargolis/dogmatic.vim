@@ -19,12 +19,15 @@ arrow keys. Vim will show a message at the bottom of the window when you try to
 use your arrow keys.
 
 In order to see Dogmatic's output in Insert mode you will need to add this line to your vimrc.
+
     set cmdheight=2
 
-You can set a timeout value for Dogmatic so that it will only count the first arrow press in a sequence where you press multiple arrow keys
+You can set a timeout value (in milliseconds) for Dogmatic so that it will only count the first arrow press in a sequence where you press multiple arrow keys
 
-    :let g:dogmatic_timeout = 1   "one second timeout
+    :let g:dogmatic_timeout = 1000  "one second timeout
 
 or
 
-    :let g:dogmatic_timeout = 5   "five second timeout
+    :let g:dogmatic_timeout = 500   "half a second timeout
+
+Note that if Vim is not compiled with the `+reltime` feature, the minimum interval between key presses that Dogmatic can see is 1 second, meaning any value of `g:dogmatic_timeout` below 1000 will be regarded as 0.
