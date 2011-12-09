@@ -21,3 +21,7 @@ use your arrow keys.
 In order to see Dogmatic's output in Insert mode you will need to add this line to your vimrc.
     set cmdheight=2
 
+You can set a timeout value for Dogmatic so that it will only count the first arrow press in a sequence where you press multiple arrow keys
+    :let g:dogmatic_timeout = 1   "one second timeout
+or
+    :let g:dogmatic_timeout = 5   "five second timeout
