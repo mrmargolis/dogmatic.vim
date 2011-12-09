@@ -1,6 +1,7 @@
 "Dogmatic.vim disables your arrow keys and lets you know how many times you
 "have tried to use them.
 " Author:   Matt Margolis  @mrmargolis
+" reltime support contributed by jdevera
 
 let s:presses = { 'left': 0, 'right': 0, 'up': 0, 'down': 0 }
 let s:last_arrow_press_time = has('reltime') ? [0,0] : 0
