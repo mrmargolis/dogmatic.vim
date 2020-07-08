@@ -1,4 +1,4 @@
-#dogmatic.vim - Arrow keys are heretical
+# dogmatic.vim - Arrow keys are heretical
 Dogmatic is a Vim plugin that disables the arrow keys and lets you know how
 often you try to use them.
 
@@ -8,7 +8,7 @@ your muscle memory of Vim's movement mappings.
 
 Dogmatic does not prevent you from using the arrow keys on the cmdline.
 
-##Installation
+## Installation
 I recommend using pathogen to manage your Vim plugins.  If you wish to manually
 install this plugin, copy the dogmatic.vim file into your ~/.vim/plugin
 directory.
